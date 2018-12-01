@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Malven520&#39;s Tech Blog</title>
+    <link>http://www.example.com/en/tags/</link>
+    <description>Recent content in Tags on Malven520&#39;s Tech Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Malven520</copyright>
+    
+	<atom:link href="http://www.example.com/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
