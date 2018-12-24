@@ -2,20 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Malven520&#39;s Tech Blog</title>
-    <link>http://www.example.com/tags/</link>
+    <link>https://malven520.github.io/tags/</link>
     <description>Recent content in Tags on Malven520&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Malven520</copyright>
+    <lastBuildDate>Mon, 24 Dec 2018 09:32:00 +0900</lastBuildDate>
     
-	<atom:link href="http://www.example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malven520.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Advent Calendar</title>
+      <link>https://malven520.github.io/tags/advent-calendar/</link>
+      <pubDate>Mon, 24 Dec 2018 09:32:00 +0900</pubDate>
+      
+      <guid>https://malven520.github.io/tags/advent-calendar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://malven520.github.io/tags/hugo/</link>
+      <pubDate>Mon, 24 Dec 2018 09:32:00 +0900</pubDate>
+      
+      <guid>https://malven520.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ポエム</title>
-      <link>http://www.example.com/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</link>
+      <link>https://malven520.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</link>
       <pubDate>Sat, 01 Dec 2018 14:53:46 +0900</pubDate>
       
-      <guid>http://www.example.com/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</guid>
+      <guid>https://malven520.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</guid>
       <description></description>
     </item>
     

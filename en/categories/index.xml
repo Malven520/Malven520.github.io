@@ -2,12 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Malven520&#39;s Tech Blog</title>
-    <link>http://www.example.com/en/categories/</link>
+    <link>https://malven520.github.io/en/categories/</link>
     <description>Recent content in Categories on Malven520&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Malven520</copyright>
     
-	<atom:link href="http://www.example.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malven520.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

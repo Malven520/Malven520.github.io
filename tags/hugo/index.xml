@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Malven520&#39;s Tech Blog</title>
-    <link>https://malven520.github.io/</link>
-    <description>Recent content on Malven520&#39;s Tech Blog</description>
+    <title>Hugo on Malven520&#39;s Tech Blog</title>
+    <link>https://malven520.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Malven520&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 24 Dec 2018 09:32:00 +0900</lastBuildDate>
     
-	<atom:link href="https://malven520.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malven520.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -29,20 +29,6 @@ wigets.tomlの[about]のlogoを編集します。
 コマンドとか(備忘録を兼ねて） この記事を作成しましょう。
 hugo new content/posts/GitHubPages_Blog.md 記事のdraftをFalseにしないと公開されないので、気を付けます。 YAMLなので、タグ付けやカテゴライズについては下記のように書きます。
 --- title: &amp;#34;GitHub PagesにBlog作成&amp;#34; date: 2018-12-24T09:32:00+09:00 draft: False categories: [&amp;#34;Tech&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;Advent Calendar&amp;#34;] --- 画面を見て確認したいとき(http://localhost:1313で見られるようになります)</description>
-    </item>
-    
-    <item>
-      <title>Blogを作成したので、テスト投稿してみる</title>
-      <link>https://malven520.github.io/posts/test/</link>
-      <pubDate>Sat, 01 Dec 2018 14:53:46 +0900</pubDate>
-      
-      <guid>https://malven520.github.io/posts/test/</guid>
-      <description>PyLadiesのもくもく会にてBlogをもくもく作成中です。
-Tech Blog(予定)なので、あまり写真を使わない方向のThemeを選択しました。
-Python関係無いですが、デザインも少しいじりたいなあと…。
-とりあえずデプロイまでして、Advent Calendarまでにカスタマイズできれば良いなあと考えています。
-Blogができるまでの顛末については、今後書くかもしれません。
-アウトプット手段ができたのは良いことですが、放置気味にならないようにせねば。</description>
     </item>
     
   </channel>

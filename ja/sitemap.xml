@@ -3,101 +3,125 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.example.com/posts/test/</loc>
+    <loc>https://malven520.github.io/posts/githubpages_blog/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/posts/test/</loc>
     <lastmod>2018-12-01T14:53:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.example.com/categories/blog/</loc>
-    <lastmod>2018-12-01T14:53:46+09:00</lastmod>
+    <loc>https://malven520.github.io/tags/advent-calendar/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.example.com/categories/</loc>
-    <lastmod>2018-12-01T14:53:46+09:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://www.example.com/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://www.example.com/malven520/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/en/malven520/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://www.example.com/malven520/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://www.example.com/</loc>
-    <lastmod>2018-12-01T14:53:46+09:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.example.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="http://www.example.com/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://www.example.com/posts/</loc>
+    <loc>https://malven520.github.io/categories/blog/</loc>
     <lastmod>2018-12-01T14:53:46+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.example.com/series/</loc>
+    <loc>https://malven520.github.io/categories/</loc>
+    <lastmod>2018-12-01T14:53:46+09:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/en/series/"
+                href="https://malven520.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://www.example.com/series/"
+                href="https://malven520.github.io/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>https://malven520.github.io/tags/hugo/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/malven520/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.example.com/en/tags/"
+                href="https://malven520.github.io/en/malven520/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://www.example.com/tags/"
+                href="https://malven520.github.io/malven520/"
                 />
   </url>
   
   <url>
-    <loc>http://www.example.com/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</loc>
+    <loc>https://malven520.github.io/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://malven520.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://malven520.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/posts/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/series/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://malven520.github.io/en/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://malven520.github.io/series/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/tags/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://malven520.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://malven520.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/categories/tech/</loc>
+    <lastmod>2018-12-24T09:32:00+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://malven520.github.io/tags/%E3%83%9D%E3%82%A8%E3%83%A0/</loc>
     <lastmod>2018-12-01T14:53:46+09:00</lastmod>
     <priority>0</priority>
   </url>

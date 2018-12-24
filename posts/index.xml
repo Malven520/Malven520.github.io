@@ -2,21 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Malven520&#39;s Tech Blog</title>
-    <link>http://www.example.com/posts/</link>
+    <link>https://malven520.github.io/posts/</link>
     <description>Recent content in Posts on Malven520&#39;s Tech Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Malven520</copyright>
-    <lastBuildDate>Sat, 01 Dec 2018 14:53:46 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Dec 2018 09:32:00 +0900</lastBuildDate>
     
-	<atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://malven520.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>GitHub PagesにBlog作成</title>
+      <link>https://malven520.github.io/posts/githubpages_blog/</link>
+      <pubDate>Mon, 24 Dec 2018 09:32:00 +0900</pubDate>
+      
+      <guid>https://malven520.github.io/posts/githubpages_blog/</guid>
+      <description>はじめに この記事はPyLadies Advent Calendar 2018の17日目の記事です。 …なんですが、大幅な遅刻をしてしまいました。 精神的な余裕がない時に安請け合いをするものではないですね。申し訳ございません。 アウトプット手段、ということで、昨年のchanmitsu55さんの記事を参考にブログを作成していきます。 Pythonは今回関係ありませんが、PyLadiesのもくもく会＋αで作成していますということで。
+Hugoのインストール PCがWindowsなので…
+ Hugoの公式からファイルを落として解凍 PATHを通す(Windows10)  この辺りは公式ドキュメントを参考にサクッと。
+Blog作成 hugo new site MyBlog cd ./MyBolog/themes git clone {好きなテーマのリポジトリURL} テーマはMinimoにしました。 Minimoのインストールガイドはここです。
+SampleSiteのconfig.tomlをMyBlogのconfig.tomlと置き換えます。
+設定ファイルをいじる 適当にカスタマイズしていきます。
+minimo公式ドキュメントのここなども参考にしつつ。
+サイドバーのアバウトのロゴを変えたい フロント側に詳しくないので少しハマりました。
+wigets.tomlの[about]のlogoを編集します。
+[about] title = &amp;#34;&amp;#34; description = &amp;#34;&amp;#34; logo = &amp;#34;images/Malven520_icon_circle.png&amp;#34; MyBlog配下の/themes/minimo/static/imagesにファイルを置いてあげればOKでした。
+コマンドとか(備忘録を兼ねて） この記事を作成しましょう。
+hugo new content/posts/GitHubPages_Blog.md 記事のdraftをFalseにしないと公開されないので、気を付けます。 YAMLなので、タグ付けやカテゴライズについては下記のように書きます。
+--- title: &amp;#34;GitHub PagesにBlog作成&amp;#34; date: 2018-12-24T09:32:00+09:00 draft: False categories: [&amp;#34;Tech&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;Advent Calendar&amp;#34;] --- 画面を見て確認したいとき(http://localhost:1313で見られるようになります)</description>
+    </item>
+    
+    <item>
       <title>Blogを作成したので、テスト投稿してみる</title>
-      <link>http://www.example.com/posts/test/</link>
+      <link>https://malven520.github.io/posts/test/</link>
       <pubDate>Sat, 01 Dec 2018 14:53:46 +0900</pubDate>
       
-      <guid>http://www.example.com/posts/test/</guid>
+      <guid>https://malven520.github.io/posts/test/</guid>
       <description>PyLadiesのもくもく会にてBlogをもくもく作成中です。
 Tech Blog(予定)なので、あまり写真を使わない方向のThemeを選択しました。
 Python関係無いですが、デザインも少しいじりたいなあと…。

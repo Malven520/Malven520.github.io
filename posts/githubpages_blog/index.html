@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang='ja'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='はじめに この記事はPyLadies Advent Calendar 2018の17日目の記事です。 …なんですが、大幅な遅刻をしてしまいました。 精神的な余裕がない時に安請け合いをするものではないですね。申し訳ございません。 アウトプット手段、ということで、昨年のchanmitsu55さんの記事を参考にブログを作成していきます。 Pythonは今回関係ありませんが、PyLadiesのもくもく会＋αで作成していますということで。
+Hugoのインストール PCがWindowsなので…
+ Hugoの公式からファイルを落として解凍 PATHを通す(Windows10)  この辺りは公式ドキュメントを参考にサクッと。
+Blog作成 hugo new site MyBlog cd ./MyBolog/themes git clone {好きなテーマのリポジトリURL} テーマはMinimoにしました。 Minimoのインストールガイドはここです。
+SampleSiteのconfig.tomlをMyBlogのconfig.tomlと置き換えます。
+設定ファイルをいじる 適当にカスタマイズしていきます。
+minimo公式ドキュメントのここなども参考にしつつ。
+サイドバーのアバウトのロゴを変えたい フロント側に詳しくないので少しハマりました。
+wigets.tomlの[about]のlogoを編集します。
+[about] title = &#34;&#34; description = &#34;&#34; logo = &#34;images/Malven520_icon_circle.png&#34; MyBlog配下の/themes/minimo/static/imagesにファイルを置いてあげればOKでした。
+コマンドとか(備忘録を兼ねて） この記事を作成しましょう。
+hugo new content/posts/GitHubPages_Blog.md 記事のdraftをFalseにしないと公開されないので、気を付けます。 YAMLなので、タグ付けやカテゴライズについては下記のように書きます。
+--- title: &#34;GitHub PagesにBlog作成&#34; date: 2018-12-24T09:32:00&#43;09:00 draft: False categories: [&#34;Tech&#34;] tags: [&#34;Hugo&#34;, &#34;Advent Calendar&#34;] --- 画面を見て確認したいとき(http://localhost:1313で見られるようになります)'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='GitHub PagesにBlog作成 • Malven520&#39;s Tech Blog'>
+<meta property='og:description' content='はじめに この記事はPyLadies Advent Calendar 2018の17日目の記事です。 …なんですが、大幅な遅刻をしてしまいました。 精神的な余裕がない時に安請け合いをするものではないですね。申し訳ございません。 アウトプット手段、ということで、昨年のchanmitsu55さんの記事を参考にブログを作成していきます。 Pythonは今回関係ありませんが、PyLadiesのもくもく会＋αで作成していますということで。
+Hugoのインストール PCがWindowsなので…
+ Hugoの公式からファイルを落として解凍 PATHを通す(Windows10)  この辺りは公式ドキュメントを参考にサクッと。
+Blog作成 hugo new site MyBlog cd ./MyBolog/themes git clone {好きなテーマのリポジトリURL} テーマはMinimoにしました。 Minimoのインストールガイドはここです。
+SampleSiteのconfig.tomlをMyBlogのconfig.tomlと置き換えます。
+設定ファイルをいじる 適当にカスタマイズしていきます。
+minimo公式ドキュメントのここなども参考にしつつ。
+サイドバーのアバウトのロゴを変えたい フロント側に詳しくないので少しハマりました。
+wigets.tomlの[about]のlogoを編集します。
+[about] title = &#34;&#34; description = &#34;&#34; logo = &#34;images/Malven520_icon_circle.png&#34; MyBlog配下の/themes/minimo/static/imagesにファイルを置いてあげればOKでした。
+コマンドとか(備忘録を兼ねて） この記事を作成しましょう。
+hugo new content/posts/GitHubPages_Blog.md 記事のdraftをFalseにしないと公開されないので、気を付けます。 YAMLなので、タグ付けやカテゴライズについては下記のように書きます。
+--- title: &#34;GitHub PagesにBlog作成&#34; date: 2018-12-24T09:32:00&#43;09:00 draft: False categories: [&#34;Tech&#34;] tags: [&#34;Hugo&#34;, &#34;Advent Calendar&#34;] --- 画面を見て確認したいとき(http://localhost:1313で見られるようになります)'>
+<meta property='og:url' content='https://malven520.github.io/posts/githubpages_blog/'>
+<meta property='og:site_name' content='Malven520&#39;s Tech Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='posts'><meta property='article:tag' content='Hugo'><meta property='article:tag' content='Advent Calendar'><meta property='article:published_time' content='2018-12-24T09:32:00&#43;09:00'/><meta property='article:modified_time' content='2018-12-24T09:32:00&#43;09:00'/><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@Malven520'>
+
+<meta name="generator" content="Hugo 0.52" />
+
+  <title>GitHub PagesにBlog作成 • Malven520&#39;s Tech Blog</title>
+  <link rel='canonical' href='https://malven520.github.io/posts/githubpages_blog/'>
+  
+  
+  <link rel='icon' href='/Malven520.ico'>
+<link rel='stylesheet' href='/assets/css/main.4a10984a.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+  
+
+</head>
+<body class='page type-posts has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'></a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <div class='logo'>
+      <a href='/'>
+        <img src='/images/Malven520_icon_circle.png'>
+      </a>
+    </div>
+    
+    <h2 class='title site-title '>
+    Malven520&#39;s Tech Blog
+    </h2>
+    <div class='desc'>
+    PythonやRPAやマイブーム技術について綴るブログ
+    </div>
+  </header>
+
+</section>
+<section class='widget widget-social_menu sep-after'><nav aria-label=''>
+    <ul><li>
+        <a href='https://github.com/Malven520' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://twitter.com/Malven520' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'></span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section><section class='widget widget-taxonomy_cloud sep-after'>
+  <header>
+    <h4 class='title widget-title'></h4>
+  </header>
+
+  <div class='container list-container'>
+  <ul class='list taxonomy-cloud'><li>
+        <a href='/tags/advent-calendar/' style='font-size:1em'>Advent Calendar</a>
+      </li><li>
+        <a href='/tags/hugo/' style='font-size:1em'>Hugo</a>
+      </li><li>
+        <a href='/tags/%E3%83%9D%E3%82%A8%E3%83%A0/' style='font-size:1em'>ポエム</a>
+      </li></ul>
+</div>
+
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label=''>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'></a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'></span>
+  <span class='open'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+  
+</svg>
+</span>
+  <span class='close'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+  
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href=''></a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Malven520&#39;s Tech Blog</a></li><li><a href='/posts/'>Posts</a></li><li><span>GitHub PagesにBlog作成</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Malven520&#39;s Tech Blog</p><p class='desc site-desc'>PythonやRPAやマイブーム技術について綴るブログ</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='ja' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>GitHub PagesにBlog作成</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'> </span>
+  <time class='entry-date' datetime='2018-12-24T09:32:00&#43;09:00'>2018, Dec 24</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>この記事は<a href="https://adventar.org/calendars/3116" target="_blank">PyLadies Advent Calendar 2018</a>の17日目の記事です。
+…なんですが、大幅な遅刻をしてしまいました。
+精神的な余裕がない時に安請け合いをするものではないですね。申し訳ございません。
+アウトプット手段、ということで、昨年の<a href="https://chanmitsu55.github.io/2017/12/25/2017-12-25-create-blog-by-hugo/" target="_blank">chanmitsu55さんの記事</a>を参考にブログを作成していきます。
+Pythonは今回関係ありませんが、<a href="https://pyladies-tokyo.connpass.com/event/107418/" target="_blank">PyLadiesのもくもく会</a>＋αで作成していますということで。</p>
+
+<h2 id="hugoのインストール">Hugoのインストール</h2>
+
+<p>PCがWindowsなので…</p>
+
+<ol>
+<li>Hugoの公式からファイルを落として解凍</li>
+<li>PATHを通す(Windows10)</li>
+</ol>
+
+<p>この辺りは<a href="https://pyladies-tokyo.connpass.com/event/107418/" target="_blank">公式ドキュメント</a>を参考にサクッと。</p>
+
+<h2 id="blog作成">Blog作成</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">hugo new site MyBlog
+cd ./MyBolog/themes
+git clone {好きなテーマのリポジトリURL}</code></pre></div>
+<p>テーマは<a href="https://themes.gohugo.io/minimo/" target="_blank">Minimo</a>にしました。
+Minimoのインストールガイドは<a href="https://minimo.netlify.com/docs/installation/" target="_blank">ここ</a>です。<br>
+SampleSiteの<code>config.toml</code>をMyBlogの<code>config.toml</code>と置き換えます。</p>
+
+<h2 id="設定ファイルをいじる">設定ファイルをいじる</h2>
+
+<p>適当にカスタマイズしていきます。</p>
+
+<p>minimo公式ドキュメントの<a href="https://minimo.netlify.com/docs/widgets/" target="_blank">ここ</a>なども参考にしつつ。</p>
+
+<h2 id="サイドバーのアバウトのロゴを変えたい">サイドバーのアバウトのロゴを変えたい</h2>
+
+<p>フロント側に詳しくないので少しハマりました。</p>
+
+<p><code>wigets.toml</code>の<code>[about]</code>の<code>logo</code>を編集します。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">about</span>]
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">logo</span> = <span style="color:#e6db74">&#34;images/Malven520_icon_circle.png&#34;</span></code></pre></div>
+<p>MyBlog配下の<code>/themes/minimo/static/images</code>にファイルを置いてあげればOKでした。</p>
+
+<h2 id="コマンドとか-備忘録を兼ねて">コマンドとか(備忘録を兼ねて）</h2>
+
+<p>この記事を作成しましょう。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">hugo new content/posts/GitHubPages_Blog.md</code></pre></div>
+<p>記事の<code>draft</code>を<code>False</code>にしないと公開されないので、気を付けます。
+YAMLなので、タグ付けやカテゴライズについては下記のように書きます。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+title: <span style="color:#e6db74">&#34;GitHub PagesにBlog作成&#34;</span>
+date: <span style="color:#e6db74">2018-12-24T09:32:00</span>+<span style="color:#ae81ff">09</span>:<span style="color:#ae81ff">00</span>
+draft: False
+categories: [<span style="color:#e6db74">&#34;Tech&#34;</span>]
+tags: [<span style="color:#e6db74">&#34;Hugo&#34;</span>, <span style="color:#e6db74">&#34;Advent Calendar&#34;</span>]
+---</code></pre></div>
+<p>画面を見て確認したいとき(<code>http://localhost:1313</code>で見られるようになります)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">hugo server -D</code></pre></div>
+<p>ビルドします</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-console" data-lang="console">hugo</code></pre></div>
+<h2 id="チキンなのでリポジトリを分ける">チキンなのでリポジトリを分ける</h2>
+
+<p>このBlogはGitHub Pagesで公開していますが、編集中のものをごちゃごちゃ置くのはちょっと…ということで、設定ファイル等を置くプライベートリポジトリをBitbucketに作成し、Publicの部分だけGitHubに置きます。</p>
+
+<p>リポジトリの分け方については、先述のChanmitsu55さんの記事に詳しく記載されていますので、そちらをご参照ください。</p>
+
+<p>また、Hugoに関してGitHubとBitbucketを使い分ける方法については下記のブログが詳しいです。<br>
+<a href="http://blog.shotarok.com/post/2015-12-15_my-first-post/" target="_blank">http://blog.shotarok.com/post/2015-12-15_my-first-post/</a></p>
+
+<h2 id="そうだ-circleciで自動化しよう">そうだ、CircleCIで自動化しよう</h2>
+
+<p>とはいえ、2つもリポジトリがあると記事執筆が面倒です。
+事実、カスタマイズやビルドの負担が大きく、放置してしまったという前科があります。
+色々とリサーチした結果、CircleCIで自動化するのがモダンでイケているのでは？という結論に至りました。
+お察しの通りミーハーです。</p>
+
+<p>GitHubとBitbucketを使い分け、かつCircleCIを使う方法については下記のブログを参考にしています。<br>
+<a href="http://blog.shotarok.com/post/hugo-with-bitbucket-and-circleci/" target="_blank">http://blog.shotarok.com/post/hugo-with-bitbucket-and-circleci/</a></p>
+
+<h2 id="cicleciとの連携について-準備編">CicleCIとの連携について 準備編</h2>
+
+<p>今回作成したリポジトリをCircleCIと連携させます。</p>
+
+<p>まず、今回のブログの秘密鍵＆公開鍵を作成していきます。
+Windowsなので<a href="https://qiita.com/reflet/items/5c6ba6e29fe8436c3185" target="_blank">こちらのQiita記事</a>を参考にしています。
+公開鍵作成時に<code>Saving key &quot;~/.ssh/id_rsa&quot; failed: No such file or directory</code>というエラーが出ましたが、
+<code>-f ~/.ssh/id_rsa</code>という形ではなく、<code>-f id_rsa</code>という形で指定して実行したところうまくいきました。
+ちなみにパスワードは空にしないと後で上手くいかないという記述を見落としてやり直しました…。</p>
+
+<h2 id="cicleciとの連携について-github側">CicleCIとの連携について GitHub側</h2>
+
+<p>GitHubのリポジトリに作成した公開鍵を登録します。</p>
+
+<p>作成したリポジトリ&gt;<code>Settings</code>&gt;<code>Deploy Keys</code>&gt;<code>Add Deploy Key</code></p>
+
+<p>Titleに識別できる名前を入れて、Keyに<code>.pub</code>の中身をコピペすればOKです。
+<code>Allow write access</code>にも忘れずにチェックしましょう。</p>
+
+<h2 id="cicleciとの連携について-bitbucket側">CicleCIとの連携について Bitbucket側</h2>
+
+<p>テキトーにGitHubでログインしてしまったのですが、今回はBitbucketをConnectする必要があります。
+<code>User Settings</code>の<code>Account Integrations</code>でBitbucketと接続します。</p>
+
+<p>ConnectするとProjectをフォローできるようになるので、Bitbucketの方のリポジトリをフォローします。
+<code>Jobs</code>からフォローしたプロジェクトに飛べるようになるので、歯車アイコンをクリックすると設定画面に飛びます。
+<code>SSH Permissions</code>ページの<code>Add SSH Key</code>から先ほど作成した秘密鍵を登録します。
+<code>Hostname</code>は<code>github.com</code>を入力し、<code>Private Key</code>に秘密鍵の中身をコピペします。</p>
+
+<h2 id="設定ファイルを作成">設定ファイルを作成</h2>
+
+<p>CircleCIの設定ファイルについては以下のブログを参考にしています。
+<a href="https://t32k.me/mol/log/hugo-circleci-ghpages-2018/" target="_blank">https://t32k.me/mol/log/hugo-circleci-ghpages-2018/</a></p>
+
+<p>CircleCIは2.0と1.0で大きく異なるので、その辺りを注意しないとハマります。ハマりました…。
+あと、改行コードとか基本的なことを押さえておけば大丈夫かと思われます。</p>
+
+<h2 id="確認">確認</h2>
+
+<p>CircleCIが<code>Success</code>、GitHubに<code>Commit</code>できていればOKです！</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+<span class='screen-reader-text'>categories: </span><a class='category' href='/categories/tech/'>Tech</a></div>
+<div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+<span class='screen-reader-text'>tags: </span><a class='tag' href='/tags/hugo/'>Hugo</a>, <a class='tag' href='/tags/advent-calendar/'>Advent Calendar</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/posts/test/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ </span>
+        <span class='screen-reader-text'>: </span>Blogを作成したので、テスト投稿してみる</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><div class='copyright'>
+  <p> &copy; 2018 Malven520 </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.fae8ed32.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+
